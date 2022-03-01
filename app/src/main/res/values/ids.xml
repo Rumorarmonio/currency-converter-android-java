@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="exercise_direction" type="id" />
+    <item name="exercise_number_of_questions" type="id" />
+    <item name="high_score" type="id" />
+    <item name="exercise_name" type="id" />
+</resources>

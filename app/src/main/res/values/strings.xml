@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">CurrencyConverterJava</string>
+    <string name="currency_converter"><b><i>Конвертер валют</i></b></string>
+    <string name="update_data">Обновить данные</string>
+    <string name="input_hint">Введите сумму…</string>
+    <string name="understandable">Понятно :)</string>
+    <string name="rubles">Российские рубли</string>
+    <string name="convert">Конвертировать</string>
+    <string name="idunno">¯\\_(ツ)_/¯</string>
+</resources>

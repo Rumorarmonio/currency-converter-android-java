@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginHorizontal="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/currency_converter"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="34sp" />
+
+    <LinearLayout
+        android:id="@+id/checkbox_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_field"
+        android:padding="2dp">
+
+        <CheckBox
+            android:id="@+id/check_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rubles"
+            android:textSize="34sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/first_spinner_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkbox_container"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/currency_to_convert"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:paddingTop="10dip"
+            android:spinnerMode="dialog" />
+
+        <ImageButton
+            android:id="@+id/first_image_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:drawable/ic_menu_info_details" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/text_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/first_spinner_container"
+        android:hint="@string/input_hint"
+        android:inputType="numberDecimal"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:id="@+id/second_spinner_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_input"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/destination_currency"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:paddingTop="10dip"
+            android:spinnerMode="dialog" />
+
+        <ImageButton
+            android:id="@+id/second_image_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:drawable/ic_menu_info_details" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/convert_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/second_spinner_container"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:text="@string/convert"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/result_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/convert_button"
+        android:text="@string/idunno"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="34sp" />
+
+    <Button
+        android:id="@+id/fetch_data_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:text="@string/update_data"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="30sp" />
+
+</RelativeLayout>
